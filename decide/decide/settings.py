@@ -74,15 +74,15 @@ MODULES = [
 BASEURL = 'http://egc-articuno-voting.herokuapp.com'
 
 APIS = {
-    'authentication': 'BASEURL',
-    'base': 'BASEURL',
-    'booth': 'BASEURL',
-    'census': 'BASEURL',
-    'mixnet': 'BASEURL',
-    'postproc': 'BASEURL',
-    'store': 'BASEURL',
-    'visualizer': 'BASEURL',
-    'voting': 'BASEURL',
+    'authentication': BASEURL,
+    'base': BASEURL,
+    'booth': BASEURL,
+    'census': BASEURL,
+    'mixnet': BASEURL,
+    'postproc': BASEURL,
+    'store': BASEURL,
+    'visualizer': BASEURL,
+    'voting': BASEURL,
 }
 
 MIDDLEWARE = [
