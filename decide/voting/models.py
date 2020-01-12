@@ -110,6 +110,7 @@ class Voting(models.Model):
                     'votes': votes,
                     'gender': p.gender,
                     'postal_code': p.postal_code,
+                    'dni': c.dni,
                     'candidate_type': 'president',
                     'party': pty.name
                 })
@@ -124,6 +125,7 @@ class Voting(models.Model):
                     'votes': votes,
                     'gender': c.gender,
                     'postal_code': c.postal_code,
+                    'dni': c.dni,
                     'candidate_type': 'congress',
                     'party': pty.name
                 })
@@ -161,6 +163,7 @@ class PartyPresidentCandidate(models.Model):
 
     gender = models.CharField(max_length=1, choices=choices)
     postal_code = models.CharField(max_length=5, validators=[RegexValidator(r'^[0-9]{5}$'),valid])
+    dni = models.CharField(max_length=9, validators=[RegexValidator(r'^[0-9]{8}[A-Z]{1}$')])
 
     
     def save(self):
@@ -213,6 +216,8 @@ class PartyCongressCandidate(models.Model):
 
     gender = models.CharField(max_length=1, choices=choices)
     postal_code = models.CharField(max_length=5, validators=[RegexValidator(r'^[0-9]{5}$'),valid])
+    dni = models.CharField(max_length=9, validators=[RegexValidator(r'^[0-9]{8}[A-Z]{1}$')])
+
     
     def save(self):
         if not self.number:
