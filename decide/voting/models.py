@@ -110,7 +110,7 @@ class Voting(models.Model):
                     'votes': votes,
                     'gender': p.gender,
                     'postal_code': p.postal_code,
-                    'dni': c.dni,
+                    'dni': p.dni,
                     'candidate_type': 'president',
                     'party': pty.name
                 })
