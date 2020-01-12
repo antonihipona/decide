@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/egc-articuno-voting/decide.svg?branch=master)](https://travis-ci.com/egc-articuno-voting/decide) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/afc7f20ed8324018a0f08af85fbecd68)](https://www.codacy.com/gh/egc-articuno-voting/decide?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=egc-articuno-voting/decide&amp;utm_campaign=Badge_Grade)[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/afc7f20ed8324018a0f08af85fbecd68)](https://www.codacy.com/gh/egc-articuno-voting/decide?utm_source=github.com&utm_medium=referral&utm_content=egc-articuno-voting/decide&utm_campaign=Badge_Coverage)
+
 Plataforma voto electrónico educativa
 =====================================
 
